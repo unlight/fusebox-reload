@@ -30,7 +30,7 @@ const ds = fuseBox({ config }).devServer(`>main.ts`, {
     httpServer: false,
     emitter: (self, fileInfo) => {
         if (fileInfo.path === 'index.html') {
-            self.socketServer.send('source-changed', {type: 'reload'});
+            setTimeout(() => self.socketServer.send('source-changed', {type: 'reload'}), 200);
         } else {
             self.socketServer.send('source-changed', fileInfo);
         }
