@@ -1,5 +1,7 @@
 fusebox-reload
 ==============
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/unlight/fusebox-reload.svg)](https://greenkeeper.io/)
 FuseBox Loader Plugin which do livereload on demand.
 
 INSTALL
